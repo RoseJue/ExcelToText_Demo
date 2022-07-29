@@ -7,8 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Height="42" Margin="556,340,0,0" VerticalAlignment="Top" Width="147" Click="Button_Click"/>
-        <TextBox x:Name="Textbox1" HorizontalAlignment="Left" Height="258" Margin="94,61,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="609"/>
+        <Button Content="转换" HorizontalAlignment="Left" Height="42" Margin="628,374,0,0" VerticalAlignment="Top" Width="147" Click="Button_Click"/>
+        <TextBox x:Name="Textbox1" HorizontalAlignment="Left" Height="290" Margin="94,63,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="609"/>
+        <TextBox x:Name="Textbox2" HorizontalAlignment="Left" Height="29" Margin="94,10,0,0" TextWrapping="Wrap" Text="请在此输入需要转换的Excel的路径" VerticalAlignment="Top" Width="554" FontSize="15"/>
 
     </Grid>
 </Window>

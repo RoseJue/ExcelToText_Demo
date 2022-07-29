@@ -34,12 +34,17 @@ namespace ExcelToWord_Demo
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            DataTable dt = ExcelHelper.ExcelConversionDataTable(@"C:\Users\TR\Desktop\Excel\涂布\XM-A1-正极涂布-实操--导出题目.xlsx", "");
+            DataTable dt = ExcelHelper.ExcelConversionDataTable($"{Textbox2.Text}", "");
 
             var json = JsonConvert.SerializeObject(dt);
 
             json = json.Replace("\"", "");
             json = json.Replace(",", "\n");
+            json = json.Replace("\\n", "\n");
+            json = json.Replace("[", "");
+            json = json.Replace("]", "");
+            json = json.Replace("{", "");
+            json = json.Replace("}", "");
             //json = json.Replace("选项F:null","");
             var split = json.Split('\n');
             List<string> list = new List<string>();
